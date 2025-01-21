@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Lottery": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

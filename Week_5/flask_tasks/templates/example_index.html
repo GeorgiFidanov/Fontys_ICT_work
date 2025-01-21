@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Light Samples</title>
+</head>
+<body>
+    <h1>Current Light Level</h1>
+    <p>Time: {{ current_time }}</p>
+    <p>Light Level: {{ light_level }}</p>
+
+    <h2>Last Samples</h2>
+    <ul>
+        {% for sample in samples %}
+            <li>{{ sample.timestamp }} - Light Level: {{ sample.light_level }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/display_samples">View All Samples</a>
+</body>
+</html>

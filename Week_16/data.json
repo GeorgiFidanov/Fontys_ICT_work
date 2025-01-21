@@ -1,0 +1,134 @@
+[
+  {
+    "TaskId": 1,
+    "Name": "Open - no ass",
+    "Departments": [
+      "HumanResources",
+      "ResearchAndDevelopment"
+    ],
+    "Status": "Cancelled",
+    "Description": "he",
+    "Deadline": "2025-01-12T09:12:37.3443338+01:00",
+    "CreatedBy": [
+      {
+        "EmployeeId": 9,
+        "SSN": "144-99-5120",
+        "FirstName": "Cam\u00E9lia",
+        "LastName": "Smallpeice",
+        "Gender": "Female",
+        "StreetName": "Loftsgordon",
+        "StreetNumber": "052",
+        "Zipcode": "0483 XD",
+        "City": "Tula",
+        "Email": "vsmallpeice8@ycombinator.com",
+        "Username": "csmallpeice",
+        "Password": "5120123",
+        "Department": "ResearchAndDevelopment"
+      }
+    ],
+    "AssignedTo": []
+  },
+  {
+    "TaskId": 2,
+    "Name": "open - with ass",
+    "Departments": [
+      "Sales"
+    ],
+    "Status": "Open",
+    "Description": "ha",
+    "Deadline": "2025-01-12T09:13:18.6596531+01:00",
+    "CreatedBy": [
+      {
+        "EmployeeId": 73,
+        "SSN": "233-29-5034",
+        "FirstName": "Ad\u00E9lie",
+        "LastName": "McGilvary",
+        "Gender": "Male",
+        "StreetName": "Briar Crest",
+        "StreetNumber": "2019",
+        "Zipcode": "2674 HD",
+        "City": "Kudang",
+        "Email": "kmcgilvary20@answers.com",
+        "Username": "amcgilvary",
+        "Password": "5034123",
+        "Department": "HumanResources"
+      },
+      {
+        "EmployeeId": 77,
+        "SSN": "587-71-0099",
+        "FirstName": "Agn\u00E8s",
+        "LastName": "Ferier",
+        "Gender": "Male",
+        "StreetName": "Laurel",
+        "StreetNumber": "1093",
+        "Zipcode": "8831 PG",
+        "City": "Mancilang",
+        "Email": "gferier24@nasa.gov",
+        "Username": "aferier",
+        "Password": "0099123",
+        "Department": "Support"
+      }
+    ],
+    "AssignedTo": [
+      {
+        "EmployeeId": 80,
+        "SSN": "816-08-0623",
+        "FirstName": "Val\u00E9rie",
+        "LastName": "Ethridge",
+        "Gender": "Female",
+        "StreetName": "Hanover",
+        "StreetNumber": "852",
+        "Zipcode": "8299 EF",
+        "City": "Albuquerque",
+        "Email": "lethridge27@freewebs.com",
+        "Username": "vethridge",
+        "Password": "0623123",
+        "Department": "Sales"
+      },
+      {
+        "EmployeeId": 155,
+        "SSN": "426-22-3606",
+        "FirstName": "\u00C5ke",
+        "LastName": "Mozzi",
+        "Gender": "Female",
+        "StreetName": "Parkside",
+        "StreetNumber": "82557",
+        "Zipcode": "2188 BP",
+        "City": "Valada",
+        "Email": "mmozzi4a@foxnews.com",
+        "Username": "\u00E5mozzi",
+        "Password": "3606123",
+        "Department": "ResearchAndDevelopment"
+      }
+    ]
+  },
+  {
+    "TaskId": 3,
+    "Name": "canceled - no ass",
+    "Departments": [
+      "HumanResources",
+      "Marketing"
+    ],
+    "Status": "Cancelled",
+    "Description": "Pepe",
+    "Deadline": "2025-02-02T10:14:48.761",
+    "CreatedBy": [
+      {
+        "EmployeeId": 174,
+        "SSN": "574-05-7802",
+        "FirstName": "Lucr\u00E8ce",
+        "LastName": "Baddeley",
+        "Gender": "Female",
+        "StreetName": "Evergreen",
+        "StreetNumber": "8407",
+        "Zipcode": "5635 YN",
+        "City": "La Luz",
+        "Email": "gbaddeley4t@feedburner.com",
+        "Username": "lbaddeley",
+        "Password": "7802123",
+        "Department": "Support"
+      }
+    ],
+    "AssignedTo": []
+  }
+]

@@ -1,0 +1,22 @@
+
+Exercise:
+---------
+
+Given:
+
+- a price of a product (real number),
+- a number of years (integer),
+and
+- an inflation rate for each of the years
+  (integers between 0 and 100),
+
+calculate the expected price of the product
+in each of the given years.
+
+Store all inflation rates in an array
+and all expected prices in another array.
+
+Print all the information at the end.
+
+
+

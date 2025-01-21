@@ -1,0 +1,3 @@
+TaskId,Name,Status,Description,Deadline,Departments,CreatedBy,AssignedTo
+1,Open - no ass,Cancelled,he,12/01/2025 9:12:37 am,HumanResources|ResearchAndDevelopment,,
+3,Full ,Open,Full case scenario,15/05/2030 3:13:38 pm,HumanResources|Sales,Joséphine Newarte|Gisèle Josephoff,Naéva Garrettson|Zhì Pallatina

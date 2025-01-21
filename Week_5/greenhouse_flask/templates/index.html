@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sensor Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+    function fetchLatestData() {
+        fetch('/get_latest_data')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.length > 0) {
+                    const latestSample = data[data.length - 1];
+                    document.getElementById('timestamp').textContent = latestSample.timestamp;
+                    document.getElementById('temperature').textContent = latestSample.temperature + ' ℃';
+                    document.getElementById('humidity').textContent = latestSample.humidity + ' %';
+                    document.getElementById('light_level').textContent = latestSample.light_level + ' W/m²';
+                    document.getElementById('sensor_id_display').textContent = latestSample.sensor_id;
+                } else {
+                    document.getElementById('timestamp').textContent = 'No data yet';
+                    document.getElementById('temperature').textContent = 'N/A';
+                    document.getElementById('humidity').textContent = 'N/A';
+                    document.getElementById('light_level').textContent = 'N/A';
+                    document.getElementById('sensor_id_display').textContent = 'N/A';
+                }
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+
+    // Refresh data every 5 seconds
+    setInterval(fetchLatestData, 5000);
+    </script>
+
+</head>
+<body>
+    <h1>Current Sensor Data</h1>
+    <p>Time: <span id="timestamp">{{ latest_sample.timestamp }}</span></p>
+    <p>Temperature: <span id="temperature">{{ latest_sample.temperature }} ℃</span></p>
+    <p>Humidity: <span id="humidity">{{ latest_sample.humidity }} %</span></p>
+    <p>Light Level: <span id="light_level">{{ latest_sample.light_level }} W/m²</span></p>
+    <p>Sensor ID: <span id="sensor_id_display">{{ latest_sample.sensor_id }}</span></p>
+
+    <form action="/select_sensor" method="POST">
+        <label for="sensor_id">Select Sensor:</label>
+        <select name="sensor_id" id="sensor_id">
+            <option value="1">Sensor 1</option>
+            <option value="2">Sensor 2</option>
+            <option value="3">Sensor 3</option>
+            <!-- Add more sensors as needed -->
+        </select>
+        <button type="submit">Display</button>
+    </form>
+
+    <h2>Sensor Statistics</h2>
+    <ul>
+        {% for sensor_id, stats in sensor_stats.items() %}
+            <li>
+                <strong>Sensor ID: {{ sensor_id }}</strong><br>
+                Average Temperature: {{ stats.average_temperature }} ℃<br>
+                Max Temperature: {{ stats.max_temperature }} ℃<br>
+                Min Temperature: {{ stats.min_temperature }} ℃<br>
+                Average Humidity: {{ stats.average_humidity }} %<br>
+                Max Humidity: {{ stats.max_humidity }} %<br>
+                Min Humidity: {{ stats.min_humidity }} %<br>
+                Average Light Level: {{ stats.average_light_level }} W/m²<br>
+                Max Light Level: {{ stats.max_light_level }} W/m²<br>
+                Min Light Level: {{ stats.min_light_level }} W/m²<br>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Last Samples</h2>
+    <ul>
+        {% for sample in samples %}
+            <li>{{ sample.timestamp }} - Temperature: {{ sample.temperature }} ℃, Humidity: {{ sample.humidity }} %,
+                Light Level: {{ sample.light_level }} W/m², Sensor ID: {{ sample.sensor_id }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/display_samples">View All Samples</a>
+</body>
+</html>

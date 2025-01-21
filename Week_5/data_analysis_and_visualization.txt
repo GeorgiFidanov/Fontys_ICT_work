@@ -1,0 +1,29 @@
+Temperature vs. Plant Height (Yield):
+        The plant height increases significantly between temperatures of 16°C to 24°C and then slightly decreases as the temperature rises beyond 24°C.
+        This suggests that the optimal temperature for maximum yield is around 24°C.
+
+Temperature vs. Cost:
+        The cost to maintain the temperature increases exponentially as the temperature rises.
+        This indicates that higher temperatures are more expensive to maintain, especially beyond 24°C.
+
+Humidity vs. Plant Height (Yield):
+        The plant height peaks when the relative humidity is between 75% to 85% and then decreases slightly as the humidity continues to increase.
+        This implies that the ideal humidity range for maximum yield is between 75% to 85%.
+
+Humidity vs. Cost:
+        The cost to maintain humidity increases steadily as the humidity level rises.
+        Higher humidity levels are more expensive to maintain.
+
+Conclusion for Optimal Conditions
+    	Optimal Temperature: Around 24°C.
+    	Optimal Humidity: Between 75% to 85%.
+
+
+
+
+
+
+
+
+
+Task 2 couldn't be completed since the database wasn't available to me.

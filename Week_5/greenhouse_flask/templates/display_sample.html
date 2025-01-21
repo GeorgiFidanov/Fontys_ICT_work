@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data Samples</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>All Sensor Data Samples</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Temperature (℃)</th>
+                <th>Humidity (%)</th>
+                <th>Light Level (W/m²)</th>
+                <th>Sensor ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sample in samples %}
+            <tr>
+                <td>{{ sample.timestamp }}</td>
+                <td>{{ sample.temperature }}</td>
+                <td>{{ sample.humidity }}</td>
+                <td>{{ sample.light_level }}</td>
+                <td>{{ sample.sensor_id }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="/">Go Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Repair Shop - Finance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="https://media.istockphoto.com/id/1036660952/vector/auto-service-sign-car-repair-logo-eps.jpg?s=612x612&w=0&k=20&c=YGPt3hie_G2IvanKJcLCTy8oNqP_KAkebHfynjx8QnE=" alt="Car Repair Logo" width="100" height="100">
+        <h1>Car Repair Shop - Finance</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="finance.html">Finance</a>
+            <a href="offers.html">Offers</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+
+    <main>
+        <form action="/submit_finance_form" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="car-model">Select Car Model:</label>
+            <select id="car-model" name="car_model" required>
+                <option value="">--Select a car model--</option>
+                <option value="Toyota RAV4">Toyota RAV4</option>
+                <option value="Honda Accord">Honda Accord</option>
+                <option value="Ford Mustang">Ford Mustang</option>
+                <option value="Tesla Model 3">Tesla Model 3</option>
+            </select>
+
+            <label for="rental-period">Rental Period:</label>
+            <input type="text" id="rental-period" name="rental_period" placeholder="e.g., 1 week, 2 months" required>
+
+            <label for="comments">Additional Comments:</label>
+            <input type="text" id="comments" name="comments">
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Our email: <a href="mailto:Fontys@car.rent">Fontys@car.rent</a></p>
+        <p>Our cell: +31 45 483 438</p>
+        <p>Our fax: 043 527 57235</p>
+    </footer>
+
+</body>
+
+</html>

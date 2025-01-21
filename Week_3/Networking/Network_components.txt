@@ -1,0 +1,43 @@
+Network components:
+
+1. Router
+
+    Connects the local networks (internal employee network, customer network, and system network) to the internet. It also allows for communication between the fast-food chain location and the headquarters.
+
+2. Firewall
+
+    Crucial for protecting both the internal employee network and the system network (e.g., cash registers) from external threats and unauthorized access. It also helps to segment the networks.
+
+3. Switch
+
+    Connect multiple devices (e.g., cash registers, employee devices, system servers) on the same network. They are essential for both the internal network for systems and employees.
+
+4. Wireless Access Points (WAPs)
+
+    Provide Wi-Fi access for customers and employees. Different WAPs should be used for customer and employee networks to ensure proper segmentation.
+
+5. VLAN-capable Switch
+
+    Allow for network segmentation. A VLAN switch will help keep the customer network separate from internal networks, preventing unnecessary traffic and ensuring security.
+
+6. VPN Gateway
+
+    Allows secure remote access to the headquarters. A VPN provides encryption to ensure that sensitive data (e.g., sales information) can be sent securely.
+
+7. DHCP Server
+
+    Automatically assigns IP addresses to devices on each network (customer, employee, and systems).
+
+8. Servers
+
+        File Server: For storing employee files and sales records.
+        POS System Server: For processing orders and managing inventory.
+        Connection to Headquarters: For real-time syncing of sales data, inventory, and other operational data with HQ.
+
+9. POS Terminals (Cash Registers)
+
+    Essential for sales transactions and need to be connected to the internal network for systems to access the POS server.
+
+10. Ethernet Cables
+
+    Necessary for wired connections between network devices (routers, switches, servers, POS systems).

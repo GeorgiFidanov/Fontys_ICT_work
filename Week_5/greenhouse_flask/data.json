@@ -1,0 +1,23 @@
+[
+    {
+        "sensor_id": "5375290",
+        "timestamp": "2024-10-09 12:34:56",
+        "temperature": 23.0,
+        "humidity": 45.0,
+        "light_level": 512.0
+    },
+    {
+        "sensor_id": "5375290",
+        "timestamp": "2024-10-09 12:35:56",
+        "temperature": 22.5,
+        "humidity": 50.0,
+        "light_level": 480.0
+    },
+    {
+        "sensor_id": "5375290",
+        "timestamp": "2024-10-09 12:36:56",
+        "temperature": 24.0,
+        "humidity": 40.0,
+        "light_level": 530.0
+    }
+]
